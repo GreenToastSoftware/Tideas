@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estatísticas do site — contadores de visitas, páginas mais vistas e dados de navegação.">
+    <title>Estatísticas — A Desflorestação</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-screen">
+        <div class="loader-tree">
+            <div class="loader-trunk"></div>
+            <div class="loader-leaves"></div>
+        </div>
+        <p class="loader-text">A CARREGAR...</p>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">🌳 Desflorestação</a>
+            <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="florestas.html">Florestas</a></li>
+                <li><a href="causas.html">Causas</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="conclusao.html">Conclusão</a></li>
+            </ul>
+            <button class="dark-toggle" aria-label="Modo escuro">🌙</button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>📊 Estatísticas do Site</h1>
+    </div>
+
+    <!-- Contadores Principais -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Resumo Geral</h2>
+            <div class="stats-overview">
+                <div class="stats-card">
+                    <div class="stats-card-icon">👁️</div>
+                    <div class="stats-card-number" id="stat-total-visits">0</div>
+                    <div class="stats-card-label">Visitas Totais</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">📄</div>
+                    <div class="stats-card-number" id="stat-total-pages">0</div>
+                    <div class="stats-card-label">Páginas Visualizadas</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">⏱️</div>
+                    <div class="stats-card-number" id="stat-avg-time">0s</div>
+                    <div class="stats-card-label">Tempo Médio por Visita</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">📅</div>
+                    <div class="stats-card-number" id="stat-first-visit">—</div>
+                    <div class="stats-card-label">Primeira Visita</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Páginas Mais Visitadas -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Páginas Mais Visitadas</h2>
+            <p class="section-intro">Ranking das páginas com mais visualizações neste navegador.</p>
+            <div class="stats-pages-list" id="stats-pages-list">
+                <!-- Preenchido por JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Histórico de Visitas -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Histórico de Visitas (Últimos 7 dias)</h2>
+            <div class="stats-chart" id="stats-chart">
+                <!-- Preenchido por JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão Atual -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Sessão Atual</h2>
+            <div class="stats-session-grid">
+                <div class="stats-session-item">
+                    <span class="stats-session-label">🕐 Tempo nesta sessão</span>
+                    <span class="stats-session-value" id="session-time">0:00</span>
+                </div>
+                <div class="stats-session-item">
+                    <span class="stats-session-label">📄 Páginas nesta sessão</span>
+                    <span class="stats-session-value" id="session-pages">0</span>
+                </div>
+                <div class="stats-session-item">
+                    <span class="stats-session-label">🖥️ Navegador</span>
+                    <span class="stats-session-value" id="session-browser">—</span>
+                </div>
+                <div class="stats-session-item">
+                    <span class="stats-session-label">📐 Resolução do Ecrã</span>
+                    <span class="stats-session-value" id="session-resolution">—</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nota -->
+    <section class="section">
+        <div class="container">
+            <div class="stats-note">
+                <p>📌 <strong>Nota:</strong> Estas estatísticas são guardadas localmente no teu navegador (localStorage) e dizem respeito apenas às tuas visitas. Nenhum dado é enviado para servidores externos — a tua privacidade está garantida.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-nav">
+        <div class="container">
+            <a href="conclusao.html" class="page-nav-link prev">← Conclusão</a>
+            <a href="../index.html" class="page-nav-link next">Início →</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 — A Desflorestação: Proteger as Florestas, Proteger o Futuro</p>
+            <p style="margin-top:.5rem;font-size:.85rem;"><a href="../sitemap.html" style="color:var(--green-pale);text-decoration:none;">🗺️ Mapa do Site</a></p>
+            <p style="margin-top:.3rem;font-size:.75rem;"><a href="estatisticas.html" style="color:var(--green-mid);text-decoration:none;">📊 Estatísticas</a></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
