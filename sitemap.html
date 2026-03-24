@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa do site — todas as páginas do projeto sobre a desflorestação.">
+    <title>Mapa do Site — A Desflorestação</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sitemap-tree {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .sitemap-tree ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin: 0;
+        }
+        .sitemap-tree > ul {
+            padding-left: 0;
+        }
+        .sitemap-tree li {
+            position: relative;
+            padding: .6rem 0 .6rem 1.8rem;
+        }
+        .sitemap-tree li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--green-pale);
+        }
+        .sitemap-tree li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.4rem;
+            width: 1.2rem;
+            height: 2px;
+            background: var(--green-pale);
+        }
+        .sitemap-tree > ul > li::before,
+        .sitemap-tree > ul > li::after {
+            display: none;
+        }
+        .sitemap-tree > ul > li {
+            padding-left: 0;
+        }
+        .sitemap-tree a {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            padding: .5rem 1rem;
+            background: var(--white);
+            border: 1px solid var(--green-pale);
+            border-radius: 8px;
+            color: var(--green-dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .95rem;
+            transition: all .3s;
+            box-shadow: 0 2px 6px rgba(0,0,0,.04);
+        }
+        .sitemap-tree a:hover {
+            background: var(--green-dark);
+            color: #fff;
+            border-color: var(--green-dark);
+            transform: translateX(4px);
+        }
+        .sitemap-tree .site-icon {
+            font-size: 1.2rem;
+        }
+        .sitemap-desc {
+            display: block;
+            font-weight: 400;
+            font-size: .78rem;
+            color: var(--text-light);
+            margin-top: .15rem;
+        }
+        .sitemap-tree a:hover .sitemap-desc {
+            color: rgba(255,255,255,.75);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-screen">
+        <div class="loader-tree">
+            <div class="loader-trunk"></div>
+            <div class="loader-leaves"></div>
+        </div>
+        <p class="loader-text">A CARREGAR...</p>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌳 Desflorestação</a>
+            <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/florestas.html">Florestas</a></li>
+                <li><a href="pages/causas.html">Causas</a></li>
+                <li><a href="pages/noticias.html">Notícias</a></li>
+                <li><a href="pages/solucoes.html">Soluções</a></li>
+                <li><a href="pages/conclusao.html">Conclusão</a></li>
+            </ul>
+            <button class="dark-toggle" aria-label="Modo escuro">🌙</button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Mapa do Site</h1>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="sitemap-tree">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="site-icon">🏠</span>
+                            <div>Início<span class="sitemap-desc">Página principal com panorama global e estatísticas</span></div>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="pages/sobre.html">
+                                    <span class="site-icon">ℹ️</span>
+                                    <div>Sobre<span class="sitemap-desc">Porquê este site, missão e créditos do projeto</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/florestas.html">
+                                    <span class="site-icon">🌍</span>
+                                    <div>Florestas<span class="sitemap-desc">Desenvolvimento sustentável, ODS 15 e importância das florestas</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/causas.html">
+                                    <span class="site-icon">⚠️</span>
+                                    <div>Causas e Consequências<span class="sitemap-desc">Principais causas da desflorestação e impactos globais</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/noticias.html">
+                                    <span class="site-icon">📰</span>
+                                    <div>Notícias<span class="sitemap-desc">Artigos recentes sobre desflorestação na Europa e no mundo</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/solucoes.html">
+                                    <span class="site-icon">💡</span>
+                                    <div>Soluções<span class="sitemap-desc">Estratégias globais, ações individuais e casos de sucesso</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pages/conclusao.html">
+                                    <span class="site-icon">📝</span>
+                                    <div>Conclusão<span class="sitemap-desc">Reflexão final, vídeo e fontes bibliográficas</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 — A Desflorestação: Proteger as Florestas, Proteger o Futuro</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

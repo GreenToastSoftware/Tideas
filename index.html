@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A desflorestação: causas, consequências e soluções para proteger as florestas e o futuro do planeta.">
+    <title>A Desflorestação — Proteger as Florestas, Proteger o Futuro</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌳</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-screen">
+        <div class="loader-tree">
+            <div class="loader-trunk"></div>
+            <div class="loader-leaves"></div>
+        </div>
+        <p class="loader-text">A CARREGAR...</p>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌳 Desflorestação</a>
+            <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/florestas.html">Florestas</a></li>
+                <li><a href="pages/causas.html">Causas</a></li>
+                <li><a href="pages/noticias.html">Notícias</a></li>
+                <li><a href="pages/solucoes.html">Soluções</a></li>
+                <li><a href="pages/conclusao.html">Conclusão</a></li>
+            </ul>
+            <button class="dark-toggle" aria-label="Modo escuro">🌙</button>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600&q=80">
+                <source src="assets/video/forest.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-gradient-anim"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title-anim">A Desflorestação</h1>
+            <div class="typewriter-quote">
+                <span class="typewriter-text"></span><span class="typewriter-cursor"></span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="10000000">0</span>
+                    <span class="stat-label">hectares perdidos/ano</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="80">0</span>
+                    <span class="stat-label">% da biodiversidade terrestre</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1600000000">0</span>
+                    <span class="stat-label">pessoas dependem das florestas</span>
+                </div>
+            </div>
+            <a href="pages/sobre.html" class="btn-hero">Saber Mais →</a>
+        </div>
+    </header>
+
+    <!-- Dados Impactantes (Parallax) -->
+    <section class="section parallax-section parallax-facts">
+        <div class="container">
+            <h2 class="section-title">Sabia Que...</h2>
+            <div class="facts-timeline">
+                <div class="fact-item">
+                    <div class="fact-marker"></div>
+                    <div class="fact-content">
+                        <h3>🌳 4,7 milhões de hectares por ano</h3>
+                        <p>Entre 2010 e 2020, o mundo perdeu cerca de 4,7 milhões de hectares de floresta por ano — uma área equivalente ao território da Dinamarca anualmente.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-marker"></div>
+                    <div class="fact-content">
+                        <h3>🔥 A Amazónia emite mais CO₂ do que absorve</h3>
+                        <p>Estudos recentes mostram que partes da Floresta Amazónica já emitem mais dióxido de carbono do que absorvem, devido à desflorestação e aos incêndios.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-marker"></div>
+                    <div class="fact-content">
+                        <h3>🦧 137 espécies extintas por dia</h3>
+                        <p>A destruição das florestas tropicais é responsável pela extinção de aproximadamente 137 espécies de plantas, animais e insetos todos os dias.</p>
+                    </div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-marker"></div>
+                    <div class="fact-content">
+                        <h3>💧 As florestas regulam 75% da água doce</h3>
+                        <p>As florestas são cruciais para o ciclo da água: filtram e regulam cerca de 75% dos recursos de água doce acessíveis do mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques / Cards de navegação -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Explore o Tema</h2>
+            <div class="home-grid">
+                <a href="pages/sobre.html" class="home-card">
+                    <span class="home-card-icon">ℹ️</span>
+                    <h3>Sobre</h3>
+                    <p>Porquê este site? Descubra a nossa missão e o que vai encontrar aqui.</p>
+                </a>
+                <a href="pages/florestas.html" class="home-card">
+                    <span class="home-card-icon">🌍</span>
+                    <h3>Florestas</h3>
+                    <p>Desenvolvimento sustentável, os três pilares e o ODS 15 — Proteger a Vida Terrestre.</p>
+                </a>
+                <a href="pages/causas.html" class="home-card">
+                    <span class="home-card-icon">⚠️</span>
+                    <h3>Causas e Consequências</h3>
+                    <p>As principais causas da desflorestação e os impactos no planeta e nas populações.</p>
+                </a>
+                <a href="pages/noticias.html" class="home-card">
+                    <span class="home-card-icon">📰</span>
+                    <h3>Notícias</h3>
+                    <p>Notícias recentes sobre desflorestação na Europa, Amazónia e Portugal.</p>
+                </a>
+                <a href="pages/solucoes.html" class="home-card">
+                    <span class="home-card-icon">💡</span>
+                    <h3>Soluções</h3>
+                    <p>O que está a ser feito a nível global, individual e o papel dos jovens.</p>
+                </a>
+                <a href="pages/conclusao.html" class="home-card">
+                    <span class="home-card-icon">📝</span>
+                    <h3>Conclusão</h3>
+                    <p>Reflexão final, vídeo sobre o tema e fontes bibliográficas.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panorama Global -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Panorama Global da Desflorestação</h2>
+            <p class="section-intro">As regiões mais afetadas do mundo e o estado atual das suas florestas.</p>
+            <div class="global-grid">
+                <div class="region-card region-critical">
+                    <div class="region-header">
+                        <span class="region-emoji">🌎</span>
+                        <div>
+                            <h3>América do Sul</h3>
+                            <span class="region-tag critical">Crítico</span>
+                        </div>
+                    </div>
+                    <p>Brasil, Bolívia e Colômbia lideram a perda florestal mundial. A Amazónia perdeu ~10% da sua área desde 2000.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">~4M</span>
+                        <span class="region-stat-label">hectares/ano perdidos</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="95%" style="width:0;background:#e74c3c;"></div></div>
+                </div>
+                <div class="region-card region-critical">
+                    <div class="region-header">
+                        <span class="region-emoji">🌍</span>
+                        <div>
+                            <h3>África Central</h3>
+                            <span class="region-tag critical">Crítico</span>
+                        </div>
+                    </div>
+                    <p>A Bacia do Congo — segundo maior pulmão verde do mundo — perde floresta para agricultura de subsistência e exploração madeireira.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">~3.9M</span>
+                        <span class="region-stat-label">hectares/ano perdidos</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="90%" style="width:0;background:#e74c3c;"></div></div>
+                </div>
+                <div class="region-card region-critical">
+                    <div class="region-header">
+                        <span class="region-emoji">🌏</span>
+                        <div>
+                            <h3>Sudeste Asiático</h3>
+                            <span class="region-tag critical">Crítico</span>
+                        </div>
+                    </div>
+                    <p>Indonésia e Malásia destroem floresta tropical para plantações de óleo de palma e borracha a ritmo alarmante.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">~1.2M</span>
+                        <span class="region-stat-label">hectares/ano perdidos</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="65%" style="width:0;background:#e74c3c;"></div></div>
+                </div>
+                <div class="region-card region-high">
+                    <div class="region-header">
+                        <span class="region-emoji">🇷🇺</span>
+                        <div>
+                            <h3>Rússia / Sibéria</h3>
+                            <span class="region-tag high">Alto</span>
+                        </div>
+                    </div>
+                    <p>Mega-incêndios na taiga siberiana atingem recordes anuais, agravados pelas alterações climáticas e ondas de calor.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">~0.8M</span>
+                        <span class="region-stat-label">hectares/ano perdidos</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="45%" style="width:0;background:#f39c12;"></div></div>
+                </div>
+                <div class="region-card region-high">
+                    <div class="region-header">
+                        <span class="region-emoji">🇦🇺</span>
+                        <div>
+                            <h3>Austrália</h3>
+                            <span class="region-tag high">Alto</span>
+                        </div>
+                    </div>
+                    <p>Incêndios extremos em 2019-2020 destruíram 18,6 milhões de hectares. Eucaliptos e koalas severamente ameaçados.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">18.6M</span>
+                        <span class="region-stat-label">ha perdidos nos incêndios de 2019-20</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="50%" style="width:0;background:#f39c12;"></div></div>
+                </div>
+                <div class="region-card region-moderate">
+                    <div class="region-header">
+                        <span class="region-emoji">🇪🇺</span>
+                        <div>
+                            <h3>Europa</h3>
+                            <span class="region-tag moderate">Recuperação</span>
+                        </div>
+                    </div>
+                    <p>Florestas em crescimento graças a leis rigorosas. A UE aprovou em 2023 legislação contra a importação de produtos ligados à desflorestação.</p>
+                    <div class="region-stat">
+                        <span class="region-stat-num">+0.3M</span>
+                        <span class="region-stat-label">hectares/ano ganhos</span>
+                    </div>
+                    <div class="region-bar"><div class="region-bar-fill" data-width="25%" style="width:0;background:var(--green-light);"></div></div>
+                </div>
+            </div>
+            <div class="map-legend" style="margin-top:2rem;">
+                <div class="legend-item"><span class="legend-dot critical"></span> Crítico (&gt;1M ha/ano)</div>
+                <div class="legend-item"><span class="legend-dot high"></span> Alto (risco elevado)</div>
+                <div class="legend-item"><span class="legend-dot moderate"></span> Em recuperação</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 — A Desflorestação: Proteger as Florestas, Proteger o Futuro</p>
+            <p style="margin-top:.5rem;font-size:.85rem;"><a href="sitemap.html" style="color:var(--green-pale);text-decoration:none;">🗺️ Mapa do Site</a></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
